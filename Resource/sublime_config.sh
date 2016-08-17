@@ -4,5 +4,5 @@
 # @Last Modified by:   kk
 # @Last Modified time: 2016-01-19 04:22:16
 
-rm -r ~/.config/sublime-text-3
+sudo rm -r ~/.config/sublime-text-3
 cp -r Resource/sublime-text-3 ~/.config/
