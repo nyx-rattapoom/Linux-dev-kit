@@ -39,6 +39,18 @@ sudo apt-get install -y python3 idle3 python3-numpy python3-scipy python3-matplo
 sudo easy_install3 pip
 sudo pip3 install virtualenv
 
+# Miniconda3
+sudo ./Resource/Miniconda3_x64.sh -b -p /usr/bin/miniconda3
+export PATH=/usr/bin/miniconda3/bin:$PATH
+sudo chown -R $USER /usr/bin/miniconda3
+conda update -y conda
+conda install -y numpy
+conda install -y scipy
+conda install -y git
+conda install -y matplotlib
+echo "" >> ~/.bashrc
+echo "PATH=/usr/bin/miniconda3/bin:\$PATH" >> ~/.bashrc
+
 # Ruby
 sudo apt-get install -y ruby
 
